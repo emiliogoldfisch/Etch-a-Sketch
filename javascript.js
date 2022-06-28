@@ -46,7 +46,7 @@ const gridButton = document.querySelector('.gridButton');
 gridButton.addEventListener('click', createNewGrid);
 
 function createNewGrid() {
-    let numberOfSquares = prompt('How many squares per side?');
+    let numberOfSquares = prompt('How many squares per side? (100 max.)');
     motherDiv.textContent = '';
     for(i = 0; i < numberOfSquares; i++) {
         let columnDiv = document.createElement('div');
