@@ -48,12 +48,12 @@ gridButton.addEventListener('click', createNewGrid);
 function createNewGrid() {
     let numberOfSquares = prompt('How many squares per side?');
     motherDiv.textContent = '';
-    for(i = 0; i < numberOfSquares-1; i++) {
+    for(i = 0; i < numberOfSquares; i++) {
         let columnDiv = document.createElement('div');
         columnDiv.setAttribute('class', 'column');
         motherDiv.appendChild(columnDiv);
 
-        for(j = 0; j < numberOfSquares-1; j++) {
+        for(j = 0; j < numberOfSquares; j++) {
             let cell = document.createElement('div');
             cell.setAttribute('class', 'cell');
             columnDiv.appendChild(cell);
